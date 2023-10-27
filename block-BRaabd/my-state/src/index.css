@@ -40,5 +40,23 @@ code {
   width: 600px;
   height: 400px;
   margin: 20px auto;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+}
+
+.Images {
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  /* border: 2px solid black; */
+}
+
+.active {
+  width: 100px;
+  margin-left: 20px;
+  height: 30px;
+  color: white;
+  background-color: black;
+  /* border: none; */
+  font-size: 15px;
+  background-color: 1px solid orangered;
 }
