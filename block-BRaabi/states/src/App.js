@@ -29,7 +29,7 @@ class Test extends React.Component {
                     {" "}
                     <button className="hand_button">
                       {" "}
-                      {this.state.hand}{" "}
+                      {this.state.state === index ? "👇🏽" : "👆🏽"}{" "}
                     </button>{" "}
                   </span>
                 </button>
