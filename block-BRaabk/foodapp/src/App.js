@@ -4,9 +4,46 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cat: "all",
+      cat: "",
     };
   }
+
+  handleClick(list) {
+    if (this.state.cat === "all") {
+      return (
+        <>
+          <div className="foodDetails">
+            <div className="image">
+              <img src={list.img} alt="foodimage" />
+            </div>
+            <div className="context">
+              <h2> {list.title}</h2>
+              <p>{list.price}</p>
+              <p> {list.desc}</p>
+            </div>
+          </div>
+        </>
+      );
+    } else if (this.state.cat === list.category) {
+      return (
+        <>
+          <div className="foodDetails">
+            <div className="image">
+              <img src={list.img} alt="foodimage" />
+            </div>
+            <div className="context">
+              <h2> {list.title}</h2>
+              <p>{list.price}</p>
+              <p> {list.desc}</p>
+            </div>
+          </div>
+        </>
+      );
+    } else {
+      return null;
+    }
+  }
+
   render() {
     return (
       <>
@@ -32,19 +69,7 @@ class App extends React.Component {
         </div>
         <div className="listing">
           {data.map((list) => {
-            return (
-              <>
-                {this.state.cat === list.category ? (
-                  <div className="items Box" key={list.id}>
-                    <p>{list.category}</p>
-                  </div>
-                ) : (
-                  <div className="items Box" key={list.id}>
-                    <p>{list.id}</p>
-                  </div>
-                )}
-              </>
-            );
+            return <>{this.handleClick(list)}</>;
           })}
         </div>
       </>
