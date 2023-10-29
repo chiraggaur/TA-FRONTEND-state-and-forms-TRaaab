@@ -1,7 +1,7 @@
 import React from "react";
 import questions from "./data";
 
-class Test extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -68,4 +68,4 @@ class Test extends React.Component {
   }
 }
 
-export default Test;
+export default App;
