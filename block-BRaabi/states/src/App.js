@@ -1,12 +1,11 @@
 import React from "react";
 import questions from "./data";
 
-class App extends React.Component {
+class Test extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      state: false,
-      hand: "👇🏽",
+      state: null,
     };
   }
 
@@ -14,50 +13,31 @@ class App extends React.Component {
     return (
       <>
         <div className="ques_wrapper">
-          {questions.map((data) => {
+          {questions.map((data, index) => {
             return (
               <>
-                {this.state.state ? (
-                  <>
-                    <button
-                      className="button-q"
-                      onClick={() => {
-                        return (this.setState = {
-                          state: !this.state.state ? true : false,
-                        });
-                      }}
-                    >
-                      {data.Q}
-                      <span className="closed">
-                        {" "}
-                        <button className="hand_button">
-                          {" "}
-                          {this.state.hand}{" "}
-                        </button>{" "}
-                      </span>
-                    </button>
-                  </>
-                ) : (
-                  <>
-                    <button
-                      className="button-q"
-                      onClick={() => {
-                        return (this.setState = {
-                          state: !this.state.state ? true : false,
-                        });
-                      }}
-                    >
-                      {data.Q}
-                      <span className="closed">
-                        {" "}
-                        <button className="hand_button">
-                          {" "}
-                          {this.state.hand}{" "}
-                        </button>{" "}
-                      </span>
-                    </button>
-                  </>
-                )}
+                <button
+                  className="button-q"
+                  onClick={() => {
+                    return this.setState({
+                      state: this.state.state === index ? null : index,
+                    });
+                  }}
+                >
+                  {data.Q}
+                  <span className="closed">
+                    {" "}
+                    <button className="hand_button">
+                      {" "}
+                      {this.state.hand}{" "}
+                    </button>{" "}
+                  </span>
+                </button>
+                {this.state.state === index ? (
+                  <div className="answerBox">
+                    <p>{data.A}</p>
+                  </div>
+                ) : null}
               </>
             );
           })}
@@ -68,4 +48,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Test;
