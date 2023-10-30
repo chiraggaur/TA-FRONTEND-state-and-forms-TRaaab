@@ -1,5 +1,6 @@
 import React from "react";
 import Main from "./main";
+import Info from "./moreInfo";
 function Home(props) {
   return (
     <>
@@ -20,6 +21,7 @@ function Home(props) {
         </div>
         <div className="mainContent">
           <Main />
+          <Info />
         </div>
       </div>
     </>

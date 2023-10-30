@@ -93,3 +93,19 @@ code {
   font-style: italic;
   border: 2px solid block;
 }
+.moreInfo {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+.infoLink {
+  font-size: 18px;
+  text-decoration: none;
+}
+.infohref {
+  text-decoration: none;
+}
