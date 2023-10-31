@@ -1,0 +1,42 @@
+[
+  {
+    "name": "normal",
+    "text": "This is Roberto"
+  },
+  {
+    "name": "italic",
+    "text": "This is italic"
+  },
+  {
+    "name": "oblique",
+    "text": "This is camilo"
+  },
+  {
+    "name": "sofia",
+    "text": "This is rental"
+  },
+  {
+    "name": "oberoi",
+    "text": "This is oberoi"
+  },
+  {
+    "name": "aerial",
+    "text": "This is aerial"
+  },
+  {
+    "name": "super",
+    "text": "This is super"
+  },
+  {
+    "name": "abortal",
+    "text": "This is abortal"
+  },
+  {
+    "name": "nine",
+    "text": "This is nine"
+  },
+  {
+    "name": "tenth",
+    "text": "This is tenth"
+  }
+]
