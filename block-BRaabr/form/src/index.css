@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+form {
+  border: 2px solid black;
+  width: 400px;
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  justify-content: space-evenly;
+  margin: 100px auto;
+  font-size: 16px;
+  flex-direction: column;
+}
+label {
+  margin-top: 15px;
+}
+.Field {
+  height: 25px;
+  width: 300px;
+  margin-top: 5px;
+}
+.error {
+  border-color: red;
+}
+#textArea {
+  height: 100px;
+}
+.submitButton {
+  width: 300px;
+  height: 30px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.errorMessage {
+  color: red;
+  font-size: 18px;
+}
