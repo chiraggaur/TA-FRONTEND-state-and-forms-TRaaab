@@ -54,7 +54,8 @@ class Form extends React.Component {
       errors,
     });
   };
-  handleSubmit = () => {
+  handleSubmit = (event) => {
+    event.preventDefault();
     alert(this.state.username + this.state.email);
   };
   // methods
