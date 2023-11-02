@@ -5,3 +5,5 @@ export default function App() {
 }
 
 render(<App />, document.getElementById("root"));
+
+// npm start command not working
