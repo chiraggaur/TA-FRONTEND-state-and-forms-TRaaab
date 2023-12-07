@@ -25,16 +25,19 @@ class App extends React.Component {
         </>
       );
     } else if (this.state.cat === list.category) {
+      let dataspecific = data.find((elm) => {
+        return elm.category === list.category;
+      });
       return (
         <>
           <div className="foodDetails">
             <div className="image">
-              <img src={list.img} alt="foodimage" />
+              <img src={dataspecific.img} alt="foodimage" />
             </div>
             <div className="context">
-              <h2> {list.title}</h2>
-              <p>{list.price}</p>
-              <p> {list.desc}</p>
+              <h2> {dataspecific.title}</h2>
+              <p>{dataspecific.price}</p>
+              <p> {dataspecific.desc}</p>
             </div>
           </div>
         </>
